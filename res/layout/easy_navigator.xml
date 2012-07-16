@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/myzoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/sourceTextView"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_source" />
+
+    <EditText
+        android:id="@+id/sourceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/gurgaon" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/destinationTextView"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enter_destination" />
+
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/delhi" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/myGMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="00wO6KdS0oYczXX4Q20EC5LHFL2R6xehZZN8c8Q"
+        android:clickable="true"
+        android:enabled="true" >
+
+    </com.google.android.maps.MapView>
+
+</LinearLayout>
